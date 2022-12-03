@@ -1,0 +1,52 @@
+@use '../utilities/mixin' as  set;
+@use '../utilities/variable' as style;
+
+ .footer{
+   background:style.$white_light;
+   .top-box{
+      background:style.$orange_color;
+      a{
+         transition: style.$transition_1;
+         &:hover{
+            background:style.$white_color!important
+         };
+      }
+   }
+   .box{
+      .social-link{ 
+         a{
+            color:style.$white_color!important;
+            background:rgba(114, 107, 107, 0.8)!important;
+            padding:16px;
+            transition:style.$transition_1;
+            
+            &:hover{
+               background:style.$orange_color!important;
+            }
+         }
+      }
+      ul{
+        
+         li{
+            a{
+               font-size: style.$font_p!important;
+               color:#644E67;
+               transition:style.$transition_1;
+               font-weight:style.$font_h1;
+               &:hover{
+                  color:style.$orange_color!important;
+               }
+            }
+            span{
+               font-size:style.$font_p;
+               color:#644E67;
+            }
+         }
+      }
+     
+      h6{
+         font-size: 16px;
+         margin-bottom: 2rem;
+     }
+   }
+ }

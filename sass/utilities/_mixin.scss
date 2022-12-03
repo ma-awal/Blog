@@ -1,0 +1,37 @@
+@use './variable'as style;
+
+@mixin flex_style($min_height,$justify,$align,$direction){
+   display: flex;
+   min-height:$min_height;
+   justify-content: $justify;
+   align-items: $align;
+   $flex-direction:$direction;
+   flex-wrap:wrap;
+}
+
+@mixin btn_style{
+   font-size: style.$font_p;
+   border-radius: style.$border_radius;
+   background:style.$orange_color;
+   color:style.$white_color;
+   padding: .5rem 1.5rem;
+   &:hover{
+      background: transparent;
+      border:style.$border_2;;
+      color:style.$black_blue
+
+   }
+}
+@mixin heading_style($font,$weight,$color){
+   font-size: $font;
+   font-weight: $weight;
+   color: $color;
+    
+}
+
+@mixin para_style($font,$weight,$color){
+   font-size: $font;
+   font-weight: $weight;
+   color: $color;
+    
+}

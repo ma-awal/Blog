@@ -1,0 +1,135 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- ========== Start my-contact ========== -->
+ <section class="contact min-vh-100 d-flex align-items-center" id="contact"    >
+  <div class="container ">
+    <h2 class="text-capitalize text-center ">contact us</h2>
+    <p class="text-muted  text-center col col-md-8 col-lg-6 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto tempora blanditiis nisi accusantium totam ut sint debitis excepturi voluptates?</p>
+     <div class="row row-cols-1 row-cols-lg-3  py-5    wow animate__animated animate__fadeIn animate__slower" style="min-height:50vh">
+<div class="col"> 
+  <h4 class="mb-3">Adress</h4>
+  <div class="box mb-3"> 
+    <!-- <img src="img/location.png" class="mb-3 wow animate__animated   animate__shakeX animate__slow " data-wow-duration=".3s"  data-wow-delay=".2s" style="width:40px" alt=""> -->
+    <h6 class="text-uppercase mb-2">sriajganj ,dhaka,bangladesh</h6>
+    <p class="text-muted">Khaga sirajganj</p>
+ </div>
+ <div class="box mb-3">
+    <!-- <img src="img/telephone.png" class="mb-3 wow animate__animated   animate__shakeX animate__slower " data-wow-duration=".3s" data-wow-delay=".6s" style="width:40px" alt=""> -->
+    <h6 class="text-uppercase mb-2">01812959878</h6>
+    <p class="text-muted"> Don't forget to knock through mobile</p>
+ </div>
+ <div class="box mb-3">
+    <!-- <img src="img/mail.png" class="mb-3 wow animate__animated   animate__shakeX animate__slower " data-wow-duration=".3s" data-wow-delay="1s"   style="width:40px" alt=""> -->
+    <h6 class=" mb-2">webpro7999@gmail.com</h6>
+    <p class="text-muted">Send me your mail any time</p>
+ </div>
+</div>
+<div class="col">
+  <form action="#">
+    <div class="mb-3">
+        <label for="name">Name</label>
+        <input type="name" class="name form-control mt-1" id="name" placeholder="Enter your name">
+    </div>
+ 
+ 
+<div class="mb-3">
+  <label for="number">Phone number</label>
+  <input type="number" class=" mt-1 form-control" id="number" placeholder="Enter your number">
+</div>
+<textarea name="Message" class="form-control mb-3" id="Message" cols="1" rows="3" placeholder="Message"></textarea>
+<input type="submit" class="w-100 mx-auto btn" value="Send ">
+  </form>
+</div>
+<div class="col d-flex align-itmes-center mb-3">
+  <div class="map w-100 h-100 my-auto">
+    <iframe   class="w-100 my-auto mx-auto h-100"     id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
+</div>
+     </div>
+    
+  </div>
+</section>
+<!-- ========== End my-contact ========== -->
+
+
+
+
+<!-- ========== Start footer ========== -->
+<footer class="footer mt-5   " id="footer">
+  <div class="container wow  animate__animated animate__fadeIn    py-3">
+    <div class="row row-cols-1 row-cols-md-3   gy-2 gy-lg-0">
+       <div class="col">
+        <div class="box text-capitalize">
+          <h4>about</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex aliquid officia laboriosam repellendus facere, ad   </p>
+        <div class="social-link flex-grow-0   ">
+          <a href="#" class="mx-1"><img src="img/facebook.png" style="max-width:30px ;object-fit:cover;" alt=""></a>
+          <a href="#" class="mx-1"><img src="img/twitter.png" style="max-width:30px; object-fit:cover;" alt=""></a>
+          <a href="#" class="mx-1"><img src="img/instagram.png" style="max-width:30px; object-fit:cover;" alt=""></a>
+        </div>
+       </div>
+       </div>
+       <div class="col">
+        <div class="box text-capitalize">
+       <ul class="list-unstyled lh-lg">
+        <h4>link</h4>
+        <li><span class="me-1"><i class="fas fa-arrow-right fa-xm"></i></span> <a href="#home" class="text-decoration-none">Home</a></li>
+        <li><span class="me-1"><i class="fas fa-arrow-right fa-xm"></i></span> <a href="#about" class="text-decoration-none">About</a></li>
+        <li><span class="me-1"><i class="fas fa-arrow-right fa-xm"></i></span> <a href="#teacher" class="text-decoration-none">teachers</a></li>
+        <li><span class="me-1"><i class="fas fa-arrow-right fa-xm"></i></span> <a href="#course" class="text-decoration-none">courses</a></li>
+        <li><span class="me-1"><i class="fas fa-arrow-right fa-xm"></i></span> <a href="#pirce" class="text-decoration-none">price</a></li>
+        <li><span class="me-1"><i class="fas fa-arrow-right fa-xm"></i></span> <a href="#contact" class="text-decoration-none">contact</a></li>
+        
+       </ul>
+       </div>
+    </div>
+
+ 
+  <div class="col">
+    <div class="box text-capitalize">
+   <ul class="list-unstyled lh-lg">
+    <h4>Adress</h4>
+    <li>
+      <span class="me-1"><i class="fas fa-location fa-xm"></i></span> 
+      <span>Sirajanj ,Dhaka ,Bangladesh</span>
+    </li>
+    <li>
+      <span class="me-1"><i class="fas fa-phone fa-xm"></i></span> 
+      <span>01812959878</span>
+    </li>
+    <li>
+      <span class="me-1"><i class="fab fa-linkedin fa-xm"></i></span> 
+      <span class="text-lowercase">maawal797@gmail.com</span>
+    </li>
+     
+   </ul>
+   </div>
+</div>
+  </div>
+  <div class="div border border-top pt-3 border-0 border-white">
+     <h6 class="text-center  "> All rights reseverd by the @ -2022</h6>
+  </div>
+ </div>
+</footer>
+
+ <!-- ========== Start backtop button ========== -->
+   <a href="#" id="index" class="position-fixed bottom-0 end-0 me-3  mb-5 back-top"  ><i class="fas fa-arrow-up fa-2x text-dark "></i></a>
+ <!-- ========== End backtop button ========== -->
+<!-- ========== End footer ========== -->
+
+

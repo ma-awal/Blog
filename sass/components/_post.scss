@@ -1,0 +1,20 @@
+@use '../utilities/mixin' as  set;
+@use '../utilities/variable' as style;
+
+ .post{
+   .card{
+      .card-body{line-height: 27px;
+         span{
+            font-size: style.$font_p;
+            text-transform: capitalize;;
+         }
+          a{
+            color:style.$orange_color!important;
+            font-size: style.$font_p;;
+          }
+          strong{
+            font-size:16px;;
+          }
+      }
+   }
+ }

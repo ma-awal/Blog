@@ -1,0 +1,14 @@
+@use '../utilities/mixin' as  set;
+@use '../utilities/variable' as style;
+
+.service{
+   background: style.$white_deep;
+   .box{
+      img{
+         background: style.$pink_color;
+      }
+   }
+}
+.service2{
+   background:style.$white_color;
+}

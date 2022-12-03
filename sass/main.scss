@@ -1,0 +1,48 @@
+
+@forward './base/index';
+@forward './components/index';
+@forward './utilities/index';
+@use './utilities/mixin' as  set;
+@use './utilities/variable' as style;
+
+//  for all btn
+ .btn{
+   font-size: style.$font_p;
+   border-radius: style.$border_radius;
+   background:style.$orange_color;
+   color:style.$white_color;
+   padding: .5rem 1.5rem;
+   &:hover{
+      background: transparent;
+      border:style.$border_2!important
+
+   }
+}
+
+// js add
+.show-nav{
+   position: fixed;
+   top:0;
+   left:0;
+   background:style.$white_color;
+   box-shadow:0px 0px 20px 2px rgba(0, 0, 0, 0.353);
+   z-index: 10000;
+   .navbar{
+      .navbar-brand{
+         color:style.$black_blue!important;
+      }
+      .nav-item{
+        .nav-link{
+         color:style.$black_blue!important;
+         transition:style.$transition_1;
+         &:hover{
+            color:style.$orange_color!important;
+         }
+        }
+        .nav-link.active{
+         color:style.$orange_color!important;;
+        }
+      }
+   }
+}
+ 

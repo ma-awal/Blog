@@ -1,0 +1,48 @@
+@use '../utilities/mixin' as  set;
+@use '../utilities/variable' as style;
+
+
+.header{
+   background: linear-gradient(to top,rgba(23, 22, 20, 0.692)50%,rgba(218, 215, 224, 0.206) ),  url('../../img/tour5.jpg') no-repeat;
+   background-position: center ;
+   background-size:cover;
+   min-height:90vh;
+   .container-fluid{
+      .navbar{
+         .navbar-brand{
+            color:style.$white_color;
+            font-weight: style.$bold_semi}
+         .navbar-nav{
+            .nav-item{
+               .nav-link{
+                  @include set.para_style(14px,400,#FFFFFFFF);
+                  transition: style.$transition_1;
+                  font-weight: style.$bold_md;
+                  &:hover{
+                     color:style.$orange_color;
+                  }
+               }
+               .nav-link.active{
+                  color:style.$orange_color;
+               }  
+            }
+         }
+         .btn{
+            @include set.btn_style;
+         }
+      }
+   }
+   p{
+      font-size:style.$font_p;
+      color:style.$white-color
+   }
+ .vid-btn{
+   a{transition: style.$transition_1;
+      background-color:style.$white_color;
+   &:hover{
+        transform: scale(1.1);
+   }
+   }
+ }
+  
+}

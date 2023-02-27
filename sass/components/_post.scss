@@ -2,19 +2,103 @@
 @use '../utilities/variable' as style;
 
  .post{
-   .card{
-      .card-body{line-height: 27px;
-         span{
-            font-size: style.$font_p;
-            text-transform: capitalize;;
-         }
-          a{
-            color:style.$orange_color!important;
-            font-size: style.$font_p;;
-          }
-          strong{
-            font-size:16px;;
-          }
+padding:2rem 0rem;
+.container{
+  h2{
+   @include set.head_sm;
+   text-align: center;
+   margin-bottom: 1rem;
+  }
+  .card{
+    .card-body{ 
+       span{
+          font-size: style.$font_p;
+          text-transform: capitalize;;
+       }
+        a{
+          color:style.$orange_color!important;
+          font-size: style.$font_p;;
+        }
+        p{
+          @include set.para_sm;
+        }
+        strong{
+          
+          font-size:14px;;
+        }
+    }
+ }
+}
+ }
+
+ @media (min-width:768px) {
+  .post{
+
+    .container{
+      h2{
+       @include set.head_md
+    
       }
-   }
+      .card{
+        .card-body{ 
+           span{
+              font-size: style.$font_p;
+              text-transform: capitalize;;
+           }
+            a{
+              color:style.$orange_color!important;
+              font-size: style.$font_p;;
+            }
+            p{
+              @include set.para_base;
+            }
+            strong{
+              
+              font-size:16px;;
+            }
+        }
+     }
+    }
+     }
+    
+ }
+
+
+
+ @media (min-width:992px) {
+  .post{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;;
+    padding: 5rem 0rem;;
+
+    .container{
+      h2{
+       @include set.head_lg;
+       margin-bottom:2rem;
+       text-align: center;
+    
+      }
+      .card{
+        .card-body{ 
+           span{
+              font-size: style.$font_p;
+              text-transform: capitalize;;
+           }
+            a{
+              color:style.$orange_color!important;
+              font-size: style.$font_p;;
+            }
+            p{
+              @include set.para_base;
+            }
+            strong{
+              
+              font-size:16px;;
+            }
+        }
+     }
+    }
+     }
+    
  }

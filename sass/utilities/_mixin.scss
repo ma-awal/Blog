@@ -29,9 +29,34 @@
     
 }
 
-@mixin para_style($font,$weight,$color){
-   font-size: $font;
-   font-weight: $weight;
-   color: $color;
+@mixin para_sm(){
+    font-size:12px!important;
+    font-weight: 400!important;
+    color:#343661!important;
     
+}
+@mixin para_base(){
+   font-size:14px!important;
+   font-weight: 400!important;
+   color:#343661!important;
+   
+}
+
+
+@mixin head_sm(){
+   font-size: 24px;
+   font-weight: 700px;
+   color:#343661;;
+}
+@mixin head_md(){
+   font-size: 36px;
+   font-weight: 700px;
+   color:#343661;;
+}
+
+
+@mixin head_lg(){
+   font-size: 48px;
+   font-weight: 700px;
+   color:#343661;;
 }

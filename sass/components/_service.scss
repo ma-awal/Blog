@@ -1,14 +1,98 @@
-@use '../utilities/mixin' as  set;
+@use '../utilities/mixin' as set;
 @use '../utilities/variable' as style;
 
 .service{
-   background: style.$white_deep;
+ 
+.container
+.row{
    .box{
+     
       img{
-         background: style.$pink_color;
+         max-width: 20%;
       }
-   }
+      h3{
+         @include set.head_sm;
+         margin-bottom: 8px;;
+      }
+      h6{
+      @include set.para_base;
+      margin-top:4px;
+      }
+      p{
+         @include set.para_sm;
+         
+      }
+      a{
+         margin-bottom: 8px;;
+      }
+     }
 }
-.service2{
-   background:style.$white_color;
+    
 }
+
+@media (min-width:768px) {
+   .service{
+ padding:3rem 0rem;
+      .container
+      .row{
+         .box{
+           
+            img{
+               max-width: 25%;
+            }
+            h3{
+               
+               margin-bottom: 8px;;
+            }
+            h6{
+            @include set.para_base;
+            margin-top:4px;
+            }
+            p{
+               @include set.para_base;
+               
+            }
+            a{
+               margin-bottom: 8px;;
+            }
+           }
+      }
+          
+      }
+}
+ 
+
+@media (min-width:992px) {
+   .service{
+ padding:5rem 0rem;
+ min-height: 80vh;
+ display: flex;
+ align-items: center;
+      .container
+      .row{
+         .box{
+           
+            img{
+               max-width: 25%;
+            }
+            h3{
+               @include set.head_md;
+               
+            }
+            h6{
+            @include set.para_base;
+           
+            }
+            p{
+               @include set.para_base;
+               
+            }
+            a{
+               margin-bottom: 8px;;
+            }
+           }
+      }
+          
+      }
+}
+ 

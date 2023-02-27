@@ -1,18 +1,113 @@
 @use '../utilities/mixin' as  set;
 @use '../utilities/variable' as style;
 
+ 
  .question{
-   .accordion{
-      margin-top: 5rem;
-      .accordion-item{
-         h2{
-            .accordion-button{
-               font-size: 16px;
-               font-weight: bold;
-               color:#343661!important;
+   padding: 2rem 0rem;
+   .container{
+      .row{
+         .box{
+            h1{
+               @include set.head_sm;
+               margin-bottom: 1rem;
+               
+            }
+            .accordion{
+               .accordion-item{
+                  box-shadow: none!important;
+                  background: transparent!important;
+                  // border:none!important;
+                  h2{
+                    
+                    button{
+                     box-shadow: none!important;
+                     background: transparent!important;
+                     border:none!important;
+                     
+                     @include set.para_base
+                    }
+                  }
+                  .accordion-body{
+                     P{
+                        @include set.para_sm;
+                     }
+                  }
+               }
             }
          }
-         p{@include set.para_style(14px,400,#343661)}
       }
-   }
+   };
  }
+
+
+ @media (min-width:768px) {
+   .question{
+      padding: 3rem 0rem;
+      .container{
+         .row{
+            .box{
+               h1{
+                  @include set.head_md;
+                  margin-bottom: 1.5rem;
+                  
+               }
+               .accordion{
+                  .accordion-item{
+                     h2{
+                    
+                        button{
+       
+                         @include set.para_base;
+                         font-size: 16px;
+                        }
+                      }
+                     .accordion-body{
+                        P{
+                           @include set.para_base;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      };
+    }
+   
+ }
+
+ @media (min-width:992px) {
+   .question{
+      min-width:60vh;
+      padding: 3rem 0rem;
+      .container{
+         .row{
+            .box{
+               h1{
+             
+                  margin-bottom: 2rem;
+                  
+               }
+               .accordion{
+                  .accordion-item{
+                     h2{
+                    
+                        button{
+       
+                        
+                         font-size: 16px;
+                        }
+                      }
+                     .accordion-body{
+                        P{
+                           @include set.para_base;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      };
+    }}
+   
+
+ 

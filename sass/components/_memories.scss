@@ -1,4 +1,60 @@
 @use '../utilities/mixin' as  set;
 @use '../utilities/variable' as style;
 
- 
+ .memories{
+    padding:2rem 0rem;
+    .container{
+      .row{
+         .box{
+            h2{
+               @include set.head_sm;
+               margin-bottom: 1rem;;
+            }
+            p{
+               @include set.para_sm;
+            }
+         }
+      }
+    }
+ }
+
+ @media (min-width:768px) {
+   .memories{
+      padding:3rem 0rem;
+      .container{
+        .row{
+           .box{
+              h2{
+                 @include set.head_sm;
+                  
+              }
+              p{
+                 @include set.para_base;
+              }
+           }
+        }
+      }
+   }
+ }
+ @media (min-width:992px) {
+   .memories{
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:5rem 0rem;
+      .container{
+        .row{
+           .box{
+              h2{
+                 @include set.head_lg;
+                  
+              }
+              p{
+                 @include set.para_base;
+              }
+           }
+        }
+      }
+   }
+ }

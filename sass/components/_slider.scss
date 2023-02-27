@@ -1,23 +1,104 @@
 @use '../utilities/mixin' as  set;
 @use '../utilities/variable' as style;
 
-.slider{
-   .container-fluid{
+ .slider{
+   padding:2rem 0rem;
+   .container{
       .swiper{
-          .navigation-btn{
-             margin-right: 50%;
-            .btn1{  
-               background-color: style.$white-deep;
-               color:style.$white_color;
-               width:40px;
-               height:40px;
-               padding: 1.3rem;
-               &::after{
-                  color:style.$black_blue!important;
-                  font-size: 16px;
-               }
-           }
-          }
+        .heading{
+         h2{
+            @include set.head_sm;
+            margin-bottom: .5rem;
+            ;
+         }
+         p{
+            @include set.para_sm;
+         }
+        }
+        .swiper-wrapper{
+         .swiper-slide{
+            .img-info{
+             h4{
+               @include set.head_sm;
+               font-size: 16px;
+                margin-bottom: 4px;;
+             }
+             p{
+               @include set.para_sm
+             }
+            }
+         }
+        }
       }
    }
-}
+ }
+ 
+ @media (min-width:768px) {
+   .slider{
+      .container{
+         .swiper{
+           .heading{
+            h2{
+               @include set.head_md;
+               margin-bottom: 1rem;
+               ;
+            }
+            p{
+               @include set.para_base
+            }
+           }
+           .swiper-wrapper{
+            .swiper-slide{
+               .img-info{
+                h4{
+         
+                  font-size: 18px;
+                   margin-bottom: 4px;;
+                }
+                p{
+                  @include set.para_base
+                }
+               }
+            }
+           }
+         }
+      }
+    }
+    
+ }
+
+
+
+ @media (min-width:992px) {
+   .slider{
+      min-height: 80vh;
+      display: flex ;
+      align-items: center;
+      .container{
+         .swiper{
+           .heading{
+            h2{
+               @include set.head_lg;
+               margin-bottom: 1rem;
+               ;
+            }
+ 
+           }
+           .swiper-wrapper{
+            .swiper-slide{
+               .img-info{
+                h4{
+            
+                   margin-bottom: 8px;;
+                }
+                p{
+                  @include set.para_base
+                }
+               }
+            }
+           }
+         }
+      }
+    }
+    
+ }

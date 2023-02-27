@@ -21,12 +21,4 @@
       font-family: 'Brygada 1918', serif;
    }
     
-      h1{@include set.heading_style(60px,700,#FFFFFF) }
-      h2{@include set.heading_style(42px,600,#343661) }
-      h3{@include set.heading_style(28px,600,#343661) }
-      h4{@include set.heading_style(24px,600,#343661) }
-      h6{@include set.heading_style(18px,600,#343661) }
-      p{@include set.para_style(14px,400,#343661)}
-
-     
    

@@ -2,4 +2,59 @@
 @use '../utilities/variable' as style;
 
  
- 
+ .about{
+   padding:2rem 0rem;
+   .container{
+      .row{
+         .box{
+            h2{
+               @include set.head_sm;
+               margin-bottom: 1rem;;
+            }
+            p{
+              @include set.para_sm;
+            }
+         }
+      }
+   }
+ }
+
+ @media (min-width:768px) {
+   .about{
+      padding:3rem 0rem;
+      .container{
+         .row{
+            .box{
+               h2{
+                  @include set.head_md;
+                  margin-bottom: 1rem;;
+               }
+               p{
+                 @include set.para_base;
+               }
+            }
+         }
+      }
+    }
+   
+ }
+
+ @media (min-width:992px) {
+   .about{
+      display: flex;
+      align-items: center;
+      padding:3rem 0rem;
+      min-height: 80vh;;
+      .container{
+         .row{
+            .box{
+               h2{
+                  @include set.head_lg;
+                  margin-bottom: 1.4rem;;
+               }
+               
+            }
+         }
+      }
+    }
+ }

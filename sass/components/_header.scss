@@ -1,48 +1,131 @@
-@use '../utilities/mixin' as  set;
-@use '../utilities/variable' as style;
+@use "../utilities/mixin" as set;
+@use "../utilities/variable" as style;
 
+.header {
+  padding:.7rem 0rem;
+  background: linear-gradient(
+    to top,
+    rgba(23, 22, 20, 0.692) 50%,
+    rgba(218, 215, 224, 0.206)
+  );
+  background-position: center;
+  background-size: cover;
+  min-height: min-content;
+  .header_nav {
+    z-index: 1000;
 
-.header{
-   background: linear-gradient(to top,rgba(23, 22, 20, 0.692)50%,rgba(218, 215, 224, 0.206));   
-   background-position: center ;
-   background-size:cover;
-   min-height:90vh;
-   .container-fluid{
-      .navbar{
-         .navbar-brand{
-            color:style.$white_color;
-            font-weight: style.$bold_semi}
-         .navbar-nav{
-            .nav-item{
-               .nav-link{
-                  @include set.para_style(14px,400,#FFFFFFFF);
-                  transition: style.$transition_1;
-                  font-weight: style.$bold_md;
-                  &:hover{
-                     color:style.$orange_color;
-                  }
-               }
-               .nav-link.active{
-                  color:style.$orange_color;
-               }  
-            }
-         }
-         .btn{
-            @include set.btn_style;
-         }
+    .navbar {
+      .navbar-brand {
+        color: style.$white_color;
+        font-weight: style.$bold_semi;
       }
-   }
-   p{
-      font-size:style.$font_p;
-      color:style.$white-color
-   }
- .vid-btn{
-   a{transition: style.$transition_1;
-      background-color:style.$white_color;
-   &:hover{
-        transform: scale(1.1);
-   }
-   }
- }
-  
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            @include set.para_sm;
+
+            transition: style.$transition_1;
+
+            &:hover {
+              color: style.$orange_color;
+            }
+          }
+          .nav-link.active {
+            color: style.$orange_color;
+          }
+        }
+      }
+      .btn {
+        @include set.btn_style;
+      }
+    }
+
+    p {
+      font-size: style.$font_p;
+      color: style.$white-color;
+    }
+    .vid-btn {
+      a {
+        transition: style.$transition_1;
+        background-color: style.$white_color;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .banner {
+    padding:2rem  0rem; 
+    .row {
+      .info {
+        h1 {
+          @include set.head_sm;
+          color: white;
+        }
+        p {
+          @include set.para_base;
+          color: #ddd !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:768px) {
+   .header {
+      .header_nav {
+        .navbar {
+    
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+                @include set.para_base;
+              }
+            }
+          }
+       
+        }
+ 
+      }
+      .banner {
+         padding:2rem 0rem;
+        .row {
+          .info {
+            h1 {
+              @include set.head_md;
+              color: white;
+            }
+            p {
+              @include set.para_base;
+              color: #ddd !important;
+            }
+          }
+        }
+      }
+    }
+    
+}
+
+
+@media (min-width:992px) {
+   .header {
+      
+      .banner {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;;
+         padding:5rem 0rem;
+        .row {
+          .info {
+            h1 {
+              @include set.head_lg;
+              color: white;
+              margin-bottom: 2rem;
+            }
+ 
+          }
+        }
+      }
+    }
 }

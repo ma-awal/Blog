@@ -31,17 +31,17 @@ var swiper = new Swiper(".mySwiper", {
      
       // when window width is >= 480px
       0: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20
       },
       // when window width is >= 640px
      
       640: {
-         slidesPerView: 2,
+         slidesPerView: 3,
          spaceBetween: 40
        },
      992: {
-         slidesPerView: 3,
+         slidesPerView: 4,
          spaceBetween: 40
        },
        1140: {

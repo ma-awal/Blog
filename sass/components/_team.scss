@@ -1,5 +1,106 @@
 @use '../utilities/mixin' as  set;
 @use '../utilities/variable' as style;
  
+.team{
+   .container{
+      .team-info{
+         h2{
+            @include set.head_sm;
+            
+         }
+         p{
+            @include set.para_sm;
+         }
+      }
+      .row{
+         .card{
+            .card-body{
+                :nth-child(1){
+                  @include set.para_base;
+                   margin-bottom: 0;  
+                   font-weight: 600 ;
+               }
+               h6{
+                  margin-bottom: 4px;;;
+               }
+               :nth-child(3){
+                  @include set.para_sm;
 
+               }
+            }
+         }
+      }
+   }
+}
  
+
+@media (min-width:768px) {
+   .team{ padding:3rem 0rem;
+      .container{
+         .team-info{
+            h2{
+               @include set.head_md
+               
+            }
+            p{
+               @include set.para_base;
+            }
+         }
+         .row{
+            .card{
+               .card-body{
+                   :nth-child(1){
+                     @include set.para_base;
+                      margin-bottom: 0;  
+                      font-weight: 600 ;
+                  }
+                  h6{
+                     margin-bottom: 6px;;;
+                  }
+                  :nth-child(3){
+                     @include set.para_base;
+   
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (min-width:992px) {
+   .team{padding:5rem 0rem;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;;
+      .container{
+         .team-info{
+            h2{
+               @include set.head_lg;
+               
+            }
+            p{
+               @include set.para_base;
+            }
+         }
+         .row{
+            .card{
+               .card-body{
+                   :nth-child(1){
+                     @include set.para_base;
+                      margin-bottom: 0;  
+                      font-weight: 600 ;
+                  }
+                  h6{
+                     margin-bottom: 6px;;;
+                  }
+                  :nth-child(3){
+                     @include set.para_base
+   
+                  }
+               }
+            }
+         }
+      }
+   }
+}

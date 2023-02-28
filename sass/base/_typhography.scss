@@ -14,11 +14,26 @@
      
    html{
       scroll-behavior: smooth;
-      scroll-padding-top: 80px;   
+      scroll-padding-top: 80px;  
+      overflow-x: hidden;; 
    }
    
    body{
       font-family: 'Brygada 1918', serif;
+      overflow-x: hidden;;
    }
     
+@media (max-width:572px) {
+   
+   html{
+      margin: 0;
+      padding:0;
+      overflow-x: hidden;; 
+   }
+  body{
+      margin: 0;
+      padding:0;
+      overflow-x: hidden;; 
+   }
+}
    
